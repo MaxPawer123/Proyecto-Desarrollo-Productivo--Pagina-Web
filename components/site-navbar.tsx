@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 const navItems = [
   { href: "/proyecto", label: "El Proyecto" },
@@ -81,13 +80,6 @@ export function SiteNavbar() {
             </li>
           ))}
         </ul>
-
-        <div className="hidden md:block">
-          <Button asChild size="sm" className="rounded-full">
-            <Link href="/productos">Ver Productos</Link>
-          </Button>
-        </div>
-
         <button
           type="button"
           className="inline-flex h-10 w-10 items-center justify-center rounded-full text-foreground hover:bg-muted md:hidden"
@@ -118,11 +110,7 @@ export function SiteNavbar() {
                 </Link>
               </li>
             ))}
-            <li className="pt-2">
-              <Button asChild className="w-full rounded-full">
-                <Link href="/productos">Ver Productos</Link>
-              </Button>
-            </li>
+            
           </ul>
         </div>
       )}

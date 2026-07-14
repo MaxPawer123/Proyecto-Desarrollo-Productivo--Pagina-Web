@@ -21,17 +21,23 @@ export const metadata: Metadata = {
   title: "Cooperacion Agropecuaria a Familias Productoras | Proyecto UMSA en Sica Sica y Patacamaya, Bolivia",
   description:
     "Proyecto universitario UMSA aplicado en las comunidades productoras de Sica Sica y Patacamaya, Bolivia.",
-  keywords: [
-    "Quinua",
-    "Hortalizas",
-    "Bolivia",
-    "Sica Sica",
-    "Patacamaya",
-    "UMSA",
-    "Desarrollo Comunitario",
-    "Cooperacion Agropecuaria a Familias Productoras",
-    "Agro",
-  ],
+  icons: {
+    icon: [
+      {
+        url: '/logo.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/logo.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/logo.png',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/logo.png',
+  },
 }
 
 export const viewport = {

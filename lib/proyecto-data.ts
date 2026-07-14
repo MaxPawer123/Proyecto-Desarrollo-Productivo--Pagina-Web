@@ -3,7 +3,7 @@ export const projectDeliverables = [
     id: "diagnostico-territorial",
     section: "Diagnósticos",
     title: "Diagnóstico Multidiciplinario de Sica Sica",
-    image: "/quinua2.png",
+    image: "/diagnosticoSica.png",
     imageAlt: "Campos de quinua en Sica Sica y Patacamaya mostrando diferentes tipos de terrenos",
     url: "https://drive.google.com/file/d/1OpBUwZJsgWjRntNYjYGm7ChzDVnaAF9x/view?usp=sharing",
     description:
@@ -20,9 +20,9 @@ export const projectDeliverables = [
     id: "diagnostico-socioeconomico",
     section: "Diagnósticos",
     title: "Diagnóstico Multidiciplinario de Chairumani",
-    image: "/",
+    image: "/diagnosticoChairumani.png",
     imageAlt: "Familia de productores Aymara en su comunidad del altiplano boliviano",
-    url: "",
+    url: "https://drive.google.com/file/d/1ytBTyFtYWjv7ILYX9C0YhExfTP-MGfEl/view?usp=drive_link",
     description:
       "Levantamiento riguroso de datos técnicos en las comunidades de Milla Milla, Tarucamarca e Imilla Imilla. Este diagnóstico analiza profundamente la estructura familiar, organización comunitaria, salud del suelo, manejo agronómico, costos de producción, rentabilidad, acceso tecnológico y sistemas de comunicación que enfrentan las familias productoras de quinua.  ",
     details: [
@@ -41,9 +41,9 @@ export const projectDeliverables = [
     id: "modelo-multidisciplinario",
     section: "Modelos",
     title: "Modelo Multidisciplinario de Sica Sica",
-    image: "/",
+    image: "/modeloSica.png",
     imageAlt: "Estudiantes de distintas disciplinas de la UMSA colaborando en el campo",
-    url: "https://www.researchgate.net/publication/interdisciplinary-development",
+    url: "https://drive.google.com/file/d/14jMMgONVSHtEy7FaQLEdnend68quv5oC/view?usp=drive_link",
     description:
       "Guía práctica dirigida a las familias productoras de quinua del municipio de Sica Sica, especialmente a los socios de APROQUIMSS. Este modelo propone un enfoque integral que articula el cuidado del suelo, el manejo del cultivo, la organización comunitaria, la gestión económica y el uso de tecnologías apropiadas para fortalecer la producción de quinua de manera sostenible y con identidad territorial.",
     details: [
@@ -61,9 +61,9 @@ export const projectDeliverables = [
     id: "modelo-transferencia",
     section: "Modelos",
     title: "Modelo Multidisciplinario de Chairumani",
-    image: "/proyecto-technology-transfer.png",
+    image: "/.png",
     imageAlt: "Taller de capacitación 'Aprender Haciendo' en comunidad del altiplano",
-    url: "https://www.cgiar.org/research/technology-transfer/",
+    url: "",
     description:
       "Metodología sistemática de capacitación basada en 'Aprender Haciendo' que permite que productores y comunidades adopten nuevas tecnologías y prácticas de forma autónoma. Incluye documentación formal, guías prácticas de implementación, lecciones aprendidas y mecanismos para que otros proyectos, ONGs e instituciones repliquen el modelo en diferentes contextos del país.",
     details: [
@@ -78,9 +78,9 @@ export const projectDeliverables = [
     id: "app-yapu-aroma",
     section: "Tecnología",
     title: "Aplicación Móvil Yapu Aroma",
-    image: "/proyecto-app-yapu.png",
+    image: "/yapuaroma.jpeg",
     imageAlt: "Mockup del celular mostrando la interfaz de la app Yapu Aroma",
-    url: "https://github.com/yapu-aroma/app-mobile",
+    url: "https://drive.google.com/file/d/1CibYGhybl_a5KZBilaFu18xCaX7uPp2l/view?usp=drive_link",
     description:
       "Herramienta digital diseñada específicamente para productores de zonas rurales del altiplano. Con arquitectura offline-first, funciona sin conexión a internet y sincroniza automáticamente. Integra un calendario de cultivo, calculadora inteligente de costos de producción (ajustada para quinua y hortalizas), monitoreo de parcelas y generación automática de reportes en PDF profesionales que productores pueden compartir con autoridades, compradores o instituciones financieras.",
     details: [

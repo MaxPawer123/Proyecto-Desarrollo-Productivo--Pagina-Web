@@ -89,7 +89,7 @@ export const teamAreas: TeamArea[] = [
         ],
         socials: [
           { platform: "facebook", url: "https://www.facebook.com/max.pawer.5011516/" },
-          { platform: "linkedin", url: "https://www.facebook.com/marcoantonio.patino.9210" },
+          { platform: "linkedin", url: "" },
           { platform: "whatsapp", url: "https://wa.me/+59169769901" },
         ],
       },

@@ -204,7 +204,7 @@ export default function ProyectoPage() {
                     alt={deliverable.imageAlt}
                     width={500}
                     height={400}
-                    className="h-full w-full object-cover"
+                    className="h-180 w-150 object-cover"
                   />
                 </a>
               </div>

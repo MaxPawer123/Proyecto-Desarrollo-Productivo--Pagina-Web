@@ -21,26 +21,49 @@ export default function ProyectoPage() {
       <PageHeader
         eyebrow="El Proyecto"
         title="Nuestros Entregables e Innovaciones"
-        description="Una presentación ejecutiva de cómo fusionamos tecnología, saberes multidisciplinarios y metodologías participativas para el desarrollo real de comunidades productoras de quinua."
+        description="Descubre cómo fusionamos tecnología, saberes multidisciplinarios y metodologías participativas para el desarrollo real de comunidades productoras de quinua."
       />
 
-      {/* Resumen Ejecutivo */}
+      {/* Resumen/Enfoque del Proyecto */}
       <section className="bg-background py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border-2 border-[#003d4c] bg-gradient-to-br from-[#003d4c]/5 to-transparent p-8 sm:p-12">
-            <h2 className="font-serif text-3xl font-semibold leading-tight text-[#003d4c] sm:text-4xl">
-              Presentación Ejecutiva
-            </h2>
-            <p className="mt-6 text-base leading-relaxed text-foreground sm:text-lg">
-              El Proyecto Agro de la UMSA representa un enfoque integral e innovador al desarrollo rural. Combinamos
-              investigación rigurosa, tecnología adaptada, capacitación participativa y modelos replicables para
-              responder a los desafíos reales de las familias productoras de quinua en el altiplano boliviano.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-foreground sm:text-lg">
-              Nuestro trabajo se sustenta en cinco pilares: una mirada territorial profunda, análisis socioeconómico
-              integral, colaboración multidisciplinaria auténtica, transferencia de tecnología culturalmente apropiada, y
-              herramientas digitales diseñadas para la realidad del productor rural.
-            </p>
+          <div className="relative overflow-hidden rounded-3xl border border-[#003d4c]/10 bg-card shadow-md md:grid md:grid-cols-3 md:gap-8 lg:gap-12">
+            {/* Visual Column / Accent */}
+            <div className="relative bg-[#003d4c] p-8 md:col-span-1 md:flex md:flex-col md:justify-between lg:p-12">
+              <div className="absolute top-0 right-0 h-32 w-32 translate-x-12 -translate-y-12 rounded-full bg-white/5" />
+              <div className="absolute -bottom-8 -left-8 h-24 w-24 rounded-full bg-[#a2be00]/20 blur-md" />
+              
+              <div className="relative z-10">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#a2be00]">
+                  Enfoque
+                </span>
+                <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-2xl lg:text-3xl">
+                  Nuestro Enfoque
+                </h2>
+              </div>
+              
+              <div className="relative z-10 mt-8 hidden md:block">
+                <p className="text-xs leading-relaxed text-white/70">
+                  Desarrollo rural integral a través de la co-creación y la tecnología adaptada al altiplano.
+                </p>
+              </div>
+            </div>
+            
+            {/* Content Column */}
+            <div className="p-8 md:col-span-2 md:py-12 lg:p-12">
+              <p className="text-base font-medium leading-relaxed text-[#003d4c] sm:text-lg">
+                El Proyecto Agro de la UMSA representa un enfoque integral e innovador al desarrollo rural. Combinamos
+                investigación rigurosa, tecnología adaptada, capacitación participativa y modelos replicables para
+                responder a los desafíos reales de las familias productoras de quinua en el altiplano boliviano.
+              </p>
+              <div className="mt-6 border-t border-border/60 pt-6">
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  Nuestro trabajo se sustenta en cinco pilares clave: una mirada territorial profunda, análisis socioeconómico
+                  integral, colaboración multidisciplinaria auténtica, transferencia de tecnología culturalmente apropiada, y
+                  herramientas digitales diseñadas para la realidad del productor rural.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

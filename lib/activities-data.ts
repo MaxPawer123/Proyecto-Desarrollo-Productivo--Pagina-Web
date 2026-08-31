@@ -5,7 +5,8 @@ export type Activity = {
   icon: any
   title: string
   description: string
-  image: string
+  image?: string
+  images?: string[]
   alt: string
   tag: string
 }
@@ -18,6 +19,7 @@ export const activities: Activity[] = [
     description:
       "El 17 de octubre de 2025 se realizó la primera reunión con el responsable del proyecto, Ing. Marco Patiño, y los becarios de las carreras de Agronomía, Trabajo Social, Informática y Comunicación Social. Durante el encuentro se presentaron los objetivos, el alcance y el enfoque de trabajo del proyecto.",
     image: "/1reunion.jpg",
+    images: ["/1reunion.jpg", "/2reunion.jpg", "/PresentacionProyecto.jpg"],
     alt: "Primer encuentro con los becarios de la UMSA",
     tag: "Reuniones",
   },
@@ -28,6 +30,7 @@ export const activities: Activity[] = [
     description:
       "El 23 de octubre de 2025 se recibió una capacitación sobre el uso de KoboToolbox, herramienta que sería utilizada para el diseño y la aplicación de encuestas en las comunidades. Posteriormente, se elaboró y presentó la encuesta al responsable del proyecto y a los compañeros becarios para su revisión y validación.",
     image: "/2reunion.jpg",
+    images: ["/2reunion.jpg", "/1reunion.jpg"],
     alt: "Equipo en Viscachani",
     tag: "Reuniones",
   },
@@ -57,7 +60,7 @@ export const activities: Activity[] = [
     title: "Continuación de talleres en Sica Sica.",
     description:
       "El 17 de noviembre de 2025 - Se profundizó en el manejo de suelos y prácticas orgánicas bajo el enfoque Aprender Haciendo. Se recopilaron datos económicos y productivos, identificando falta de educación financiera y dependencia de intermediarios. También se confirmó la ausencia de tecnologías automatizadas en los cultivos",
-    image: "/tallerArroz.png",
+    images: ["/tallerArroz.png","/produc17Nov.png"],
     alt: "Taller agrícola práctico",
     tag: "Talleres",
   },
@@ -67,7 +70,7 @@ export const activities: Activity[] = [
     title: "Visita a productores de hortalizas en Viscachani y reunión con concejalas de Patacamaya.",
     description:
       "El 18 de noviembre de 2025 - Se constató un mayor nivel de tecnificación en cultivos de hortalizas (riego, maquinaria). En la reunión con autoridades, se identificaron limitaciones institucionales para impulsar liderazgos femeninos. Se cerró la jornada consolidando acuerdos y proyectando futuras intervenciones.",
-    image: "/",
+    images: ["/produc17Nov.png", "/autoridades.png"],
     alt: "Taller de suelos",
     tag: "Talleres",
   },

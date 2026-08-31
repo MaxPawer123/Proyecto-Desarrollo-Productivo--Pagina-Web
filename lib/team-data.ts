@@ -81,12 +81,12 @@ export const teamAreas: TeamArea[] = [
         role: "",
         department: "Carrera de Informática",
         image: "/david.png",
-        bio: ".",
-        achievements: [
-          "Arquitecto de Yapu Aroma",
-          "Experto en React Native y desarrollo offline",
-          "Mentor técnico del equipo",
-        ],
+        bio: "Egresado de la Carrera de Informática de la Universidad Mayor de San Andrés (UMSA), enfocado en el desarrollo de software y la arquitectura de sistemas tecnológicos aplicados al contexto rural y al fortalecimiento de los productores del altiplano.",
+       achievements: [
+     "Arquitecto y desarrollador principal de la aplicación móvil Yapu Aroma",
+     "Diseño e implementación de arquitecturas móviles con enfoque offline-first para zonas rurales",
+     "Liderazgo técnico en el desarrollo de soluciones digitales y bases de datos locales",
+      ],
         socials: [
           { platform: "facebook", url: "https://www.facebook.com/max.pawer.5011516/" },
           { platform: "linkedin", url: "" },
@@ -116,9 +116,9 @@ export const teamAreas: TeamArea[] = [
           "Productor de semilla certificada",
         ],
         socials: [
-          { platform: "facebook", url: "https://facebook.com" },
+          { platform: "facebook", url: "" },
           { platform: "tiktok", url: "https://tiktok.com" },
-          { platform: "linkedin", url: "https://linkedin.com" },
+          { platform: "linkedin", url: "" },
         ],
       },
     ],
@@ -155,11 +155,13 @@ export const teamAreas: TeamArea[] = [
         role: "",
         department: "Carrera de Trabajo Social",
         image: "/Fatima.jpg",
-        bio: "",
-        achievements: [
-          "Apoyo técnico en proyectos de cooperación agropecuaria",
-          "Facilitadora de espacios colectivos",
-        ],
+      bio: "Egresada de la Carrera de Trabajo Social, orientada al fortalecimiento de procesos comunitarios organizativos, con enfoque de género y participación activa en colectivos locales a través de la intervención social.",
+   achievements: [
+     "Apoyo técnico en proyectos de cooperación agropecuaria",
+     "Facilitadora de espacios colectivos y metodologías participativas",
+     "Fortalecimiento de vínculos comunitarios y articulación de actores locales",
+     "Promoción de la equidad de género y la inclusión en espacios formativos"
+   ],
         socials: [
           { platform: "facebook", url: "https://facebook.com" },
           { platform: "tiktok", url: "https://tiktok.com" },

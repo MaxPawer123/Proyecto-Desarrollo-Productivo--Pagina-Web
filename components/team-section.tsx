@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils"
 export function TeamSection() {
   const [selectedMember, setSelectedMember] = useState<any>(null)
   const [selectedArea, setSelectedArea] = useState<string | null>(null)
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null)
 
   const displayAreas = selectedArea ? teamAreas.filter((a) => a.id === selectedArea) : teamAreas
 
@@ -113,7 +114,13 @@ export function TeamSection() {
                 onClick={() => setSelectedMember(member)}
                 className="group relative flex flex-col overflow-hidden rounded-2xl bg-card p-6 ring-1 ring-border/60 shadow-sm transition hover:-translate-y-1 hover:shadow-md text-left"
               >
-                <div className="relative h-32 w-32 overflow-hidden rounded-xl">
+                <div
+                  className="relative h-32 w-32 overflow-hidden rounded-xl cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setLightboxImage(member.image)
+                  }}
+                >
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -127,12 +134,13 @@ export function TeamSection() {
 
                 {/* Social Links Row */}
                 <div className="mt-4 flex gap-2 pt-3 border-t border-border/40">
-                  {member.socials?.map((social) => (
+                  {member.socials?.filter(social => social.url).map((social) => (
                     <a
                       key={social.platform}
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
                       className={cn(
                         "inline-flex items-center justify-center h-8 w-8 rounded-lg text-[#003d4c] transition-colors",
                         getSocialColor(social.platform),
@@ -149,52 +157,67 @@ export function TeamSection() {
         </div>
 
         {/* Team Members Grid - THIRD */}
-        {displayAreas.map((area) => (
-          <div key={area.id} className="mt-12">
-            <h4 className="mb-6 font-serif text-xl font-semibold text-foreground">Integrante de {area.name}</h4>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {area.members.map((member) => (
-                <button
-                  key={member.id}
-                  onClick={() => setSelectedMember(member)}
-                  className="group relative flex flex-col overflow-hidden rounded-2xl bg-card p-6 ring-1 ring-border/60 shadow-sm transition hover:-translate-y-1 hover:shadow-md text-left"
-                >
-                  <div className="relative h-32 w-32 overflow-hidden rounded-xl bg-[#a2be00]/10">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <h4 className="mt-4 font-semibold text-foreground">{member.name}</h4>
-                  <p className="text-sm font-medium text-[#003d4c]">{member.role}</p>
-                  <p className="text-xs text-muted-foreground">{member.department}</p>
-                  <p className="mt-2 text-xs text-muted-foreground line-clamp-2">{member.bio}</p>
+        <div className="mt-16">
+          <h3 className="font-serif text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+            {selectedArea 
+              ? `Integrantes de ${teamAreas.find((a) => a.id === selectedArea)?.name}` 
+              : "Integrantes del Proyecto"}
+          </h3>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
+            {selectedArea 
+              ? `Estudiantes de la carrera de ${teamAreas.find((a) => a.id === selectedArea)?.name} que forman parte de la iniciativa.`
+              : "Estudiantes y profesionales multidisciplinarios de la UMSA que hacen posible el proyecto."}
+          </p>
 
-                  {/* Social Links Row */}
-                  <div className="mt-4 flex gap-2 pt-3 border-t border-border/40">
-                    {member.socials?.map((social) => (
-                      <a
-                        key={social.platform}
-                        href={social.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={cn(
-                          "inline-flex items-center justify-center h-8 w-8 rounded-lg text-[#003d4c] transition-colors",
-                          getSocialColor(social.platform),
-                        )}
-                        aria-label={social.platform}
-                      >
-                        {getSocialIcon(social.platform)}
-                      </a>
-                    ))}
-                  </div>
-                </button>
-              ))}
-            </div>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {displayAreas.flatMap((area) => area.members).map((member) => (
+              <button
+                key={member.id}
+                onClick={() => setSelectedMember(member)}
+                className="group relative flex flex-col overflow-hidden rounded-2xl bg-card p-6 ring-1 ring-border/60 shadow-sm transition hover:-translate-y-1 hover:shadow-md text-left"
+              >
+                <div
+                  className="relative h-32 w-32 overflow-hidden rounded-xl bg-[#a2be00]/10 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setLightboxImage(member.image)
+                  }}
+                >
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h4 className="mt-4 font-semibold text-foreground">{member.name}</h4>
+                {member.role && <p className="text-sm font-medium text-[#003d4c]">{member.role}</p>}
+                <p className="text-xs text-muted-foreground">{member.department}</p>
+                <p className="mt-2 text-xs text-muted-foreground line-clamp-2">{member.bio}</p>
+
+                {/* Social Links Row */}
+                <div className="mt-4 flex gap-2 pt-3 border-t border-border/40">
+                  {member.socials?.filter(social => social.url).map((social) => (
+                    <a
+                      key={social.platform}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className={cn(
+                        "inline-flex items-center justify-center h-8 w-8 rounded-lg text-[#003d4c] transition-colors",
+                        getSocialColor(social.platform),
+                      )}
+                      aria-label={social.platform}
+                    >
+                      {getSocialIcon(social.platform)}
+                    </a>
+                  ))}
+                </div>
+              </button>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
 
       {/* Modal */}
@@ -207,7 +230,10 @@ export function TeamSection() {
           {selectedMember && (
             <div className="flex flex-col gap-6">
               <div className="flex gap-6">
-                <div className="relative h-40 w-40 flex-none overflow-hidden rounded-xl">
+                <div
+                  className="relative h-40 w-40 flex-none overflow-hidden rounded-xl cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() => setLightboxImage(selectedMember.image)}
+                >
                   <Image
                     src={selectedMember.image}
                     alt={selectedMember.name}
@@ -222,7 +248,7 @@ export function TeamSection() {
 
                   {/* Social Links in Modal */}
                   <div className="mt-4 flex gap-2">
-                    {selectedMember.socials?.map((social: any) => (
+                    {selectedMember.socials?.filter((social: any) => social.url).map((social: any) => (
                       <a
                         key={social.platform}
                         href={social.url}
@@ -254,6 +280,20 @@ export function TeamSection() {
               </div>
             </div>
           )}
+        </DialogContent>
+      </Dialog>
+      {/* Photo Lightbox Modal */}
+      <Dialog open={!!lightboxImage} onOpenChange={(open) => !open && setLightboxImage(null)}>
+        <DialogContent className="max-w-4xl p-0 bg-transparent border-none shadow-none z-[100] [&>button]:text-white [&>button]:bg-black/40 [&>button]:hover:bg-black/60 [&>button]:rounded-full [&>button]:right-4 [&>button]:top-4 [&>button]:h-10 [&>button]:w-10 [&>button>svg]:h-5 [&>button>svg]:w-5 [&>button]:border [&>button]:border-white/10 [&>button]:backdrop-blur-sm">
+          <div className="relative flex items-center justify-center max-w-full max-h-[85vh] outline-none p-4">
+            {lightboxImage && (
+              <img
+                src={lightboxImage}
+                alt="Expanded member photo"
+                className="max-w-full max-h-[85vh] rounded-2xl shadow-2xl object-contain animate-in fade-in zoom-in-95 duration-200"
+              />
+            )}
+          </div>
         </DialogContent>
       </Dialog>
     </section>

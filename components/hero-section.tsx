@@ -56,22 +56,6 @@ export function HeroSection() {
               <Link href="/productos">Conoce Yapu Aroma</Link>
             </Button>
           </div>
-
-          {/* Stats */}
-          <dl className="mt-16 grid max-w-xl grid-cols-3 gap-6 border-t border-border/50 pt-8">
-            <div>
-              <dt className="text-xs uppercase tracking-wider text-muted-foreground">Comunidades</dt>
-              <dd className="mt-1 font-serif text-3xl font-semibold text-foreground">2+</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-wider text-muted-foreground">Disciplinas</dt>
-              <dd className="mt-1 font-serif text-3xl font-semibold text-foreground">5</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-wider text-muted-foreground">Entregables</dt>
-              <dd className="mt-1 font-serif text-3xl font-semibold text-foreground">3</dd>
-            </div>
-          </dl>
         </div>
       </div>
     </section>

@@ -29,7 +29,7 @@ export const coordinators: TeamMember[] = [
   {
     id: "coord-1",
     name: "",
-    role: "Coordinador Generaldfsd",
+    role: "Coordinador Generald",
     department: "Facultad de Agronomía",
     image: "/placeholder-user.jpg",
     bio: "Ingeniero Agrónomo con especialización en cultivos andinos. Más de 15 años de experiencia en investigación aplicada con comunidades campesinas del altiplano boliviano.",

@@ -19,7 +19,7 @@ export const activities: Activity[] = [
     description:
       "El 17 de octubre de 2025 se realizó la primera reunión con el responsable del proyecto, Ing. Marco Patiño, y los becarios de las carreras de Agronomía, Trabajo Social, Informática y Comunicación Social. Durante el encuentro se presentaron los objetivos, el alcance y el enfoque de trabajo del proyecto.",
     image: "/1reunion.jpg",
-    images: ["/1reunion.jpg", "/2reunion.jpg", "/PresentacionProyecto.jpg"],
+    images: ["/1reunion.jpg"],
     alt: "Primer encuentro con los becarios de la UMSA",
     tag: "Reuniones",
   },
@@ -30,14 +30,14 @@ export const activities: Activity[] = [
     description:
       "El 23 de octubre de 2025 se recibió una capacitación sobre el uso de KoboToolbox, herramienta que sería utilizada para el diseño y la aplicación de encuestas en las comunidades. Posteriormente, se elaboró y presentó la encuesta al responsable del proyecto y a los compañeros becarios para su revisión y validación.",
     image: "/2reunion.jpg",
-    images: ["/2reunion.jpg", "/1reunion.jpg"],
+    images: ["/2reunion.jpg"],
     alt: "Equipo en Viscachani",
     tag: "Reuniones",
   },
   {
     id: "fieldtrip-3",
     icon: MapPin,
-    title: "Presentación del proyecto en Sica Sica y aplicación de la encuesta",
+    title: "Presentación del proyecto en Sica Sica",
     description:
       "El 29 de octubre de 2025 - Se realizó la presentación del proyecto en uno de los espacios de reunión del Municipio de Sica Sica, junto al Ing. Marco Patiño. Durante la actividad, los becarios de las diferentes carreras se presentaron como parte del equipo técnico del proyecto. Asimismo, se aplicó la encuesta elaborada en KoboToolbox a las autoridades comunales y a los productores presentes, con el propósito de recopilar información para el desarrollo del proyecto.",
     image: "/PresentacionProyecto.jpg",
@@ -60,7 +60,7 @@ export const activities: Activity[] = [
     title: "Continuación de talleres en Sica Sica.",
     description:
       "El 17 de noviembre de 2025 - Se profundizó en el manejo de suelos y prácticas orgánicas bajo el enfoque Aprender Haciendo. Se recopilaron datos económicos y productivos, identificando falta de educación financiera y dependencia de intermediarios. También se confirmó la ausencia de tecnologías automatizadas en los cultivos",
-    images: ["/tallerArroz.png","/produc17Nov.png"],
+    images: ["/tallerArroz.png"],
     alt: "Taller agrícola práctico",
     tag: "Talleres",
   },

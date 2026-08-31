@@ -48,7 +48,7 @@ export const coordinators: TeamMember[] = [
   },
   {
     id: "coord-2",
-    name: "Ing. MSc. Marco Antonio Patiño Fernández",
+    name: "Ing. MSc. Marco Antonio Patiño Fernándezdfsfsdf",
     role: "Docente Facultad de Agronomía - UMSA",
     department: "Responsable técnico, administrativo del proyecto y tutor",
     image: "/ingpati.png",

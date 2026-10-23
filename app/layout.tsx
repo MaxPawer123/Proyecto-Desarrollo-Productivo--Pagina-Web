@@ -53,7 +53,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${jakarta.variable} ${fraunces.variable} bg-background`}>
-      <body className="font-sans antialiased flex min-h-screen flex-col">
+      <body
+        suppressHydrationWarning
+        className="font-sans antialiased flex min-h-screen flex-col"
+      >
         <SiteNavbar />
         <main className="flex-1">{children}</main>
         <SiteFooter />

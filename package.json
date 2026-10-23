@@ -1,7 +1,23 @@
 {
-  "name": "my-project",
+  "name": "my-proyect",
   "version": "0.1.0",
   "private": true,
+  "description": "sdas",
+  "homepage": "https://github.com/MaxPawer123/Proyecto-Desarrollo-Productivo--Pagina-Web#readme",
+  "bugs": {
+    "url": "https://github.com/MaxPawer123/Proyecto-Desarrollo-Productivo--Pagina-Web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxPawer123/Proyecto-Desarrollo-Productivo--Pagina-Web.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

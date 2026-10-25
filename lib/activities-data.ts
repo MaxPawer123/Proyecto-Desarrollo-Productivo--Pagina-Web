@@ -82,7 +82,7 @@ export const activities: Activity[] = [
       "Formación teórico-práctica en métodos sustentables de cultivo de quinua y rotación de cultivos.",
     images: ["/21diciembre25.jpeg", "/21diciembre252.jpeg"],
     alt: "Taller de suelos",
-    tag: "Taller de suelos",
+    tag: "Taller de suelossda",
   },
   {
     id: "workshop-4",

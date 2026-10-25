@@ -80,9 +80,9 @@ export const activities: Activity[] = [
     title: "Taller de técnicas agroecológicas",
     description:
       "Formación teórico-práctica en métodos sustentables de cultivo de quinua y rotación de cultivos.",
-    image: "/activity-workshop.jpg",
-    alt: "Técnicas agroecológicas",
-    tag: "Talleres",
+    images: ["/21diciembre25.jpeg", "/21diciembre252.jpeg"],
+    alt: "Taller de suelos",
+    tag: "Taller de suelossda",
   },
   {
     id: "workshop-4",

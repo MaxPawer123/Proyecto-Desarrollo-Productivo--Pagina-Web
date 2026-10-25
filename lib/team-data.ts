@@ -89,7 +89,7 @@ export const teamAreas: TeamArea[] = [
       ],
         socials: [
           { platform: "facebook", url: "https://www.facebook.com/max.pawer.5011516/" },
-          { platform: "linkedin", url: "" },
+          { platform: "linkedin", url: "www.linkedin.com/in/ghilmar-david-mamani-valeriano-95696820a" },
           { platform: "whatsapp", url: "https://wa.me/+59169769901" },
         ],
       },

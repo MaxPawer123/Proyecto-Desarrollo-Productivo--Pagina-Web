@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Sprout, Heart, GraduationCap, MapPin } from "lucide-react"
 
 export function SiteFooter() {
-  return (
+  return (  
     <footer className="bg-foreground text-background">
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-12">

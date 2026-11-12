@@ -23,24 +23,34 @@ export function BentoGrid() {
 
           {/* Image Placeholder Area */}
           <div className="flex flex-col gap-4">
-            <div className="relative h-48 w-full overflow-hidden rounded-2xl bg-muted ring-1 ring-border/60">
-              <div className="flex h-full items-center justify-center text-center">
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Imagen principal del ecosistema</p>
-                  <p className="mt-1 text-xs text-muted-foreground/75">Reemplazar con imagen personalizada</p>
-                </div>
-              </div>
+            <div className="relative h-48 w-full overflow-hidden rounded-2xl bg-muted ring-1 ring-border/60 shadow-sm">
+              <Image
+                src="/hero-quinoa.jpg"
+                alt="Imagen principal del ecosistema"
+                fill
+                className="object-cover transition-transform duration-500 hover:scale-105"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+              />
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative h-32 w-full overflow-hidden rounded-2xl bg-muted ring-1 ring-border/60">
-                <div className="flex h-full items-center justify-center text-center">
-                  <p className="text-xs text-muted-foreground">Imagen 1</p>
-                </div>
+              <div className="relative h-32 w-full overflow-hidden rounded-2xl bg-muted ring-1 ring-border/60 shadow-sm">
+                <Image
+                  src="/quinua2.png"
+                  alt="Cultivo de quinua"
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
               </div>
-              <div className="relative h-32 w-full overflow-hidden rounded-2xl bg-muted ring-1 ring-border/60">
-                <div className="flex h-full items-center justify-center text-center">
-                  <p className="text-xs text-muted-foreground">Imagen 2</p>
-                </div>
+              <div className="relative h-32 w-full overflow-hidden rounded-2xl bg-muted ring-1 ring-border/60 shadow-sm">
+                <Image
+                  src="/1reunion.jpg"
+                  alt="Trabajo en comunidad"
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
               </div>
             </div>
           </div>

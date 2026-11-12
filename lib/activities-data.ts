@@ -7,6 +7,7 @@ export type Activity = {
   description: string
   image?: string
   images?: string[]
+  video?: string // Link de YouTube, Vimeo o video .mp4 (ej: "https://www.youtube.com/watch?v=...")
   alt: string
   tag: string
 }
@@ -77,21 +78,22 @@ export const activities: Activity[] = [
   {
     id: "workshop-3",
     icon: Leaf,
-    title: "Taller de técnicas agroecológicas",
+    title: "Taller práctico de elaboración de bioinsumos y preparación de suelos (22 de noviembre de 2025)",
     description:
-      "Formación teórico-práctica en métodos sustentables de cultivo de quinua y rotación de cultivos.",
-    images: ["/21diciembre25.jpeg", "/21diciembre252.jpeg"],
-    alt: "Taller de sudasdaselos",
+     "El pasado 22 de noviembre de 2025 retornamos a las comunidades para desarrollar el taller práctico de elaboración de bioinsumos orientados a recuperar la fertilidad de los suelos. Tras haber entregado previamente todos los materiales e insumos necesarios, trabajamos de manera directa junto a las familias productoras en el acondicionamiento de abonos y el armado de los biodigestores (con el sellado de tapas, mangueras y la mezcla de estiércol, chancaca y leche) para la producción de biol.",
+    images: ["/21diciembre25.jpeg", "/21diciembre252.jpeg","/21diciembre253.jpeg","/21diciembre254.jpeg","/21diciembre255.jpeg", ],
+    alt: "Taller de suelos",
     tag: "Taller de suelossda",
   },
   {
     id: "workshop-4",
-    icon: Zap,
-    title: "Capacitación en uso de Yapu Aroma",
+    icon: Leaf,
+    title: "Evaluación de resultados en campo y cierre de gestión con las comunidades",
     description:
-      "Formación para productores en el uso de la aplicación móvil Yapu Aroma y sus funcionalidades de planificación.",
-    image: "/activity-workshop.jpg",
-    alt: "Capacitación app Yapu Aroma",
+      "El 22 de diciembre de 2025 retornamos a las comunidades de Milla Milla, Imilla Imilla y Tarucamarca para evaluar junto a los productores el estado de las trampas de arroz instaladas previamente. Fue una jornada sumamente gratificante al comprobar visualmente la presencia de microorganismos benéficos que fortalecerán la vida de sus suelos. Aprovechamos este valioso encuentro para agradecer profundamente el compromiso de cada familia productora y desearles unas felices fiestas y un próspero año agrícola.",
+    image: "/entrega final informe2025.jpeg",
+    // video: "https://www.youtube.com/watch?v=...", // Puedes agregar aquí tu link de video directamente
+    alt: "Evaluación de resultados en campo",
     tag: "Talleres",
   },
   {
@@ -100,7 +102,7 @@ export const activities: Activity[] = [
     title: "Socialización con autoridades locales",
     description:
       "Espacios de diálogo con autoridades de Sica Sica y Patacamaya para validar resultados y escuchar inquietudes.",
-    image: "/activity-community.jpg",
+    image: "/placeholder.jpg",
     alt: "Reunión con autoridades",
     tag: "Comunidad",
   },
@@ -110,7 +112,7 @@ export const activities: Activity[] = [
     title: "Asamblea comunitaria",
     description:
       "Encuentro con familias productoras para co-diseñar las herramientas y validar avances del proyecto.",
-    image: "/activity-community.jpg",
+    image: "/placeholder.jpg",
     alt: "Asamblea comunitaria",
     tag: "Comunidad",
   },
@@ -120,7 +122,7 @@ export const activities: Activity[] = [
     title: "Devolución de resultados",
     description:
       "Presentación participativa del diagnóstico integral en territorios, recogiendo retroalimentación para ajustes.",
-    image: "/activity-community.jpg",
+    image: "/placeholder.jpg",
     alt: "Devolución de resultados",
     tag: "Comunidad",
   },
@@ -130,7 +132,7 @@ export const activities: Activity[] = [
     title: "Encuentro de saberes",
     description:
       "Espacios de intercambio entre conocimientos académicos y saberes ancestrales de las comunidades productoras.",
-    image: "/activity-community.jpg",
+    image: "/placeholder.jpg",
     alt: "Encuentro de saberes",
     tag: "Comunidad",
   },
@@ -140,7 +142,7 @@ export const activities: Activity[] = [
     title: "Levantamiento de datos de campo",
     description:
       "Recolección sistemática de información sobre variedades de quinua, rendimientos y prácticas productivas locales.",
-    image: "/activity-diagnosis.jpg",
+    image: "/placeholder.jpg",
     alt: "Levantamiento de datos",
     tag: "Investigación",
   },
@@ -150,7 +152,7 @@ export const activities: Activity[] = [
     title: "Análisis de muestras de suelo",
     description:
       "Procesamiento científico de muestras del territorio para caracterizar composición, pH y nutrientes.",
-    image: "/activity-diagnosis.jpg",
+    image: "/placeholder.jpg",
     alt: "Análisis de suelos",
     tag: "Investigación",
   },
@@ -160,7 +162,7 @@ export const activities: Activity[] = [
     title: "Sistematización de saberes",
     description:
       "Documentación y análisis de prácticas ancestrales de productores para integrarlas al modelo multidisciplinario.",
-    image: "/activity-diagnosis.jpg",
+    image: "/placeholder.jpg",
     alt: "Sistematización de saberes",
     tag: "Investigación",
   },

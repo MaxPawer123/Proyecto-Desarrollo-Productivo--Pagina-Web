@@ -48,7 +48,7 @@ export const coordinators: TeamMember[] = [
   },
   {
     id: "coord-2",
-    name: "Ing. MSc. Marco Antonio Patiño Fernándezdfsfsdf",
+    name: "Ing. MSc. Marco Antonio Patiño Fernández",
     role: "Docente Facultad de Agronomía - UMSA",
     department: "Responsable técnico, administrativo del proyecto y tutor",
     image: "/ingpati.png",
@@ -59,9 +59,9 @@ export const coordinators: TeamMember[] = [
       "",
     ],
     socials: [
-      { platform: "facebook", url: "" },
-      { platform: "tiktok", url: "" },
-      { platform: "linkedin", url: "" },
+      { platform: "facebook", url: "https://www.facebook.com/marcoantonio.patino.9210" },
+      { platform: "linkedin", url: "https://www.linkedin.com/in/marco-antonio-pati%C3%B1o-fern%C3%A1ndez-020b65278/" },
+      { platform: "whatsapp", url: "https://wa.me/+59177766857" },
     ],
   },
 ]
@@ -89,7 +89,7 @@ export const teamAreas: TeamArea[] = [
       ],
         socials: [
           { platform: "facebook", url: "https://www.facebook.com/max.pawer.5011516/" },
-          { platform: "linkedin", url: "www.linkedin.com/in/ghilmar-david-mamani-valeriano-95696820a" },
+          { platform: "linkedin", url: "https://www.linkedin.com/in/ghilmar-david-mamani-valeriano-95696820a/" },
           { platform: "whatsapp", url: "https://wa.me/+59169769901" },
         ],
       },
@@ -117,8 +117,7 @@ export const teamAreas: TeamArea[] = [
         ],
         socials: [
           { platform: "facebook", url: "" },
-          { platform: "tiktok", url: "https://tiktok.com" },
-          { platform: "linkedin", url: "" },
+          { platform: "linkedin", url: "https://bo.linkedin.com/in/irene-l-uruchi-callisaya-899886357" },
         ],
       },
     ],
@@ -145,7 +144,7 @@ export const teamAreas: TeamArea[] = [
         ],
         socials: [
           { platform: "facebook", url: "https://www.facebook.com/share/19HhBH3MEg/" },
-          { platform: "linkedin", url: "https://www.linkedin.com/in/fatima-zulema-saavedra-suarez-57596b367?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+          { platform: "linkedin", url: "https://www.linkedin.com/in/fatima-zulema-saavedra-suarez-57596b367" },
           { platform: "whatsapp", url: "https://wa.me/+59164789012" },
         ],
       },
@@ -164,8 +163,7 @@ export const teamAreas: TeamArea[] = [
    ],
         socials: [
           { platform: "facebook", url: "https://facebook.com" },
-          { platform: "tiktok", url: "https://tiktok.com" },
-          { platform: "linkedin", url: "https://linkedin.com" },
+          { platform: "linkedin", url: "https://www.linkedin.com/in/fatima-mayta-quispe-02a7623b2/" },
           { platform: "whatsapp", url: "https://wa.me/+59164890123" },
         ],
       },
@@ -193,7 +191,6 @@ export const teamAreas: TeamArea[] = [
         ],
         socials: [
           { platform: "facebook", url: "https://facebook.com" },
-          { platform: "tiktok", url: "https://tiktok.com" },
           { platform: "linkedin", url: "https://linkedin.com" },
           { platform: "whatsapp", url: "https://wa.me/+59164901234" },
         ],
@@ -223,8 +220,7 @@ export const teamAreas: TeamArea[] = [
         ],
         socials: [
           { platform: "facebook", url: "https://facebook.com" },
-          { platform: "tiktok", url: "https://tiktok.com" },
-          { platform: "linkedin", url: "https://linkedin.com" },
+          { platform: "linkedin", url: "https://www.linkedin.com/in/tatiana-borras-anze-b42451233/" },
           { platform: "whatsapp", url: "https://wa.me/+59165123456" },
         ],
       },

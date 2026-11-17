@@ -116,8 +116,10 @@ export const teamAreas: TeamArea[] = [
           "Productor de semilla certificada",
         ],
         socials: [
-          { platform: "facebook", url: "" },
+         
+          { platform: "facebook", url: "https://www.facebook.com/irene.uruchicallisaya" },
           { platform: "linkedin", url: "https://bo.linkedin.com/in/irene-l-uruchi-callisaya-899886357" },
+          { platform: "whatsapp", url: "https://wa.me/+59176231248" },
         ],
       },
     ],

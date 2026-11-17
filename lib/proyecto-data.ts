@@ -43,7 +43,7 @@ export const projectDeliverables = [
     title: "Modelo Multidisciplinario de Sica Sica",
     image: "/modeloSica.png",
     imageAlt: "Estudiantes de distintas disciplinas de la UMSA colaborando en el campo",
-    url: "https://drive.google.com/file/d/14jMMgONVSHtEy7FaQLEdnend68quv5oC/view?usp=drive_link",
+    url: "https://drive.google.com/file/d/1muclMucM0Pzra0GP4Mtu3BShpyTQIL85/view?usp=drive_link",
     description:
       "Guía práctica dirigida a las familias productoras de quinua del municipio de Sica Sica, especialmente a los socios de APROQUIMSS. Este modelo propone un enfoque integral que articula el cuidado del suelo, el manejo del cultivo, la organización comunitaria, la gestión económica y el uso de tecnologías apropiadas para fortalecer la producción de quinua de manera sostenible y con identidad territorial.",
     details: [
@@ -61,9 +61,9 @@ export const projectDeliverables = [
     id: "modelo-transferencia",
     section: "Modelos",
     title: "Modelo Multidisciplinario de Chairumani",
-    image: "/.png",
+    image: "/modeloChairumani.png",
     imageAlt: "Taller de capacitación 'Aprender Haciendo' en comunidad del altiplano",
-    url: "",
+    url: "https://drive.google.com/file/d/1gAs2KxAEPtjX3-5MKBuv-xEXbUHq1h0S/view?usp=drive_link",
     description:
       "Metodología sistemática de capacitación basada en 'Aprender Haciendo' que permite que productores y comunidades adopten nuevas tecnologías y prácticas de forma autónoma. Incluye documentación formal, guías prácticas de implementación, lecciones aprendidas y mecanismos para que otros proyectos, ONGs e instituciones repliquen el modelo en diferentes contextos del país.",
     details: [

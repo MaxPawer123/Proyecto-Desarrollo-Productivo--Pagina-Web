@@ -1,9 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { ArrowUpRight, Smartphone } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import { products } from "@/lib/products-data"
-import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 export function ProductsSection() {
@@ -13,9 +12,6 @@ export function ProductsSection() {
   const filteredProducts = selectedCategory
     ? products.filter((p) => p.category === selectedCategory)
     : products
-
-  const yapuAromaProduct = products.find((p) => p.id === "yapu-aroma")
-  const otherProducts = filteredProducts.filter((p) => p.id !== "yapu-aroma")
 
   return (
     <section className="bg-background py-20 sm:py-24">
@@ -51,7 +47,7 @@ export function ProductsSection() {
 
         {/* Products grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {otherProducts.map((product) => (
+          {filteredProducts.map((product) => (
             <a
               key={product.id}
               href={product.url}
@@ -77,55 +73,6 @@ export function ProductsSection() {
             </a>
           ))}
         </div>
-
-        {/* Featured Yapu Aroma */}
-        {yapuAromaProduct && (
-          <div className="mt-16 overflow-hidden rounded-3xl bg-primary text-primary-foreground shadow-lg ring-1 ring-primary">
-            <div
-              className="pointer-events-none absolute inset-0 -z-0 opacity-40"
-              aria-hidden="true"
-              style={{
-                backgroundImage:
-                  "radial-gradient(circle at 90% 10%, oklch(0.74 0.14 75 / 0.7), transparent 55%), radial-gradient(circle at 10% 90%, oklch(0.74 0.14 75 / 0.35), transparent 50%)",
-              }}
-            />
-            <div className="relative grid gap-10 p-7 sm:p-10 lg:grid-cols-12 lg:gap-12 lg:p-14">
-              <div className="lg:col-span-7">
-                <span className="inline-flex items-center rounded-full bg-primary-foreground/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider">
-                  Producto Destacado · Tecnología
-                </span>
-                <div className="mt-6 flex items-center gap-4">
-                  <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-accent-foreground shadow-md">
-                    <Smartphone className="h-6 w-6" aria-hidden="true" />
-                  </span>
-                  <h2 className="font-serif text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-                    {yapuAromaProduct.name}
-                  </h2>
-                </div>
-                <p className="mt-4 text-base font-medium text-primary-foreground/85 sm:text-lg">
-                  El aporte tecnológico del proyecto
-                </p>
-                <p className="mt-3 max-w-xl text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
-                  {yapuAromaProduct.description}
-                </p>
-              </div>
-
-              <div className="relative lg:col-span-5">
-                <div className="overflow-hidden rounded-3xl bg-primary-foreground/5 ring-1 ring-primary-foreground/15">
-                  <img
-                    src="/yapu-aroma-app.jpg"
-                    alt="Mockup de la aplicación Yapu Aroma con interfaz agrícola"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground">
-                  Último Producto
-                  <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   )

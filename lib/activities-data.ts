@@ -81,7 +81,7 @@ export const activities: Activity[] = [
     title: "Taller práctico de elaboración de bioinsumos y preparación de suelos (22 de noviembre de 2025)",
     description:
      "El pasado 22 de noviembre de 2025 retornamos a las comunidades para desarrollar el taller práctico de elaboración de bioinsumos orientados a recuperar la fertilidad de los suelos. Tras haber entregado previamente todos los materiales e insumos necesarios, trabajamos de manera directa junto a las familias productoras en el acondicionamiento de abonos y el armado de los biodigestores (con el sellado de tapas, mangueras y la mezcla de estiércol, chancaca y leche) para la producción de biol.",
-    images: ["/21diciembre25.jpeg", "/21diciembre252.jpeg","/21diciembre253.jpeg","/21diciembre254.jpeg","/21diciembre255.jpeg", ],
+    images: ["/21diciembre253.jpeg","/21diciembre25.jpeg", "/21diciembre252.jpeg","/21diciembre254.jpeg","/21diciembre255.jpeg", ],
     alt: "Taller de suelos",
     tag: "Taller de suelossda",
   },
@@ -91,8 +91,8 @@ export const activities: Activity[] = [
     title: "Evaluación de resultados en campo y cierre de gestión con las comunidades",
     description:
       "El 22 de diciembre de 2025 retornamos a las comunidades de Milla Milla, Imilla Imilla y Tarucamarca para evaluar junto a los productores el estado de las trampas de arroz instaladas previamente. Fue una jornada sumamente gratificante al comprobar visualmente la presencia de microorganismos benéficos que fortalecerán la vida de sus suelos. Aprovechamos este valioso encuentro para agradecer profundamente el compromiso de cada familia productora y desearles unas felices fiestas y un próspero año agrícola.",
-    image: "/entrega final informe2025.jpeg",
-    // video: "https://www.youtube.com/watch?v=...", // Puedes agregar aquí tu link de video directamente
+    video: "https://www.youtube.com/watch?v=DU42PpcpoQ4",
+    image: "/video-evaluacion-thumb.jpg",
     alt: "Evaluación de resultados en campo",
     tag: "Talleres",
   },
@@ -102,7 +102,7 @@ export const activities: Activity[] = [
     title: "Socialización con autoridades locales",
     description:
       "Espacios de diálogo con autoridades de Sica Sica y Patacamaya para validar resultados y escuchar inquietudes.",
-    image: "/placeholder.jpg",
+    image: "/entrega final informe2025.jpeg",
     alt: "Reunión con autoridades",
     tag: "Comunidad",
   },

@@ -80,7 +80,7 @@ export const projectDeliverables = [
     title: "Aplicación Móvil Yapu Aroma",
     image: "/yapuaroma.jpeg",
     imageAlt: "Mockup del celular mostrando la interfaz de la app Yapu Aroma",
-    url: "https://drive.google.com/file/d/1CibYGhybl_a5KZBilaFu18xCaX7uPp2l/view?usp=drive_link",
+    url: "https://drive.google.com/file/d/1zcrrh7huFAuABl27ygu86UclwNYma59X/view?usp=drive_link",
     description:
       "Herramienta digital diseñada específicamente para productores de zonas rurales del altiplano. Con arquitectura offline-first, funciona sin conexión a internet y sincroniza automáticamente. Integra un calendario de cultivo, calculadora inteligente de costos de producción (ajustada para quinua y hortalizas), monitoreo de parcelas y generación automática de reportes en PDF profesionales que productores pueden compartir con autoridades, compradores o instituciones financieras.",
     details: [

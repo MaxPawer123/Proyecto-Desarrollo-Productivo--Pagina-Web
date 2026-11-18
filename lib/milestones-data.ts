@@ -24,81 +24,81 @@ export const milestones: Milestone[] = [
   {
     icon: Users,
     label: "Hito 01",
-    date: "Octubre 2025",
-    title: "Planificación Inicial y Reuniones con el Equipo",
+    date: "Septiembre 2025",
+    title: "Conformación del Equipo Multidisciplinario",
     description:
-      "Primeras reuniones y conformación del equipo multidisciplinario en la UMSA. Estudiantes de distintas facultades se reúnen para trazar un objetivo común: aportar al desarrollo de las comunidades productoras de quinua.",
+      "Integración de las cinco áreas de la UMSA (Informática, Agronomía, Administración de Empresas, Trabajo Social y Comunicación Social) para impulsar el desarrollo productivo en Sica Sica y Patacamaya.",
   },
   {
     icon: Shield,
     label: "Hito 02",
-    date: "Nuestra primera meta: Marzo 2025",
-    title: "Configuración de Redes y Seguridad",
+    date: "Octubre 2025",
+    title: "Diseño de Encuestas y Línea Base",
     description:
-      "Subneteo, Packet Tracer y bases de datos iniciales del ecosistema. Se estructuran los fundamentos técnicos y de seguridad para el proyecto.",
+      "Estructuración de formularios digitales en KoBo Toolbox y ODK para recopilar información socioeconómica, costos de producción, salud del suelo y conectividad en las parcelas sin depender de internet.",
   },
   {
     icon: CheckCircle2,
     label: "Hito 03",
-    date: "Mayo 2025",
-    title: "Validación e Identidad Digital",
+    date: "Noviembre 2025",
+    title: "Diagnóstico Participativo en Comunidades",
     description:
-      "Procesos de registro en portales ciudadanos y estructuración legal. Se estabelecen las bases normativas y digitales del proyecto.",
+      "Aplicación de encuestas y entrevistas junto a APROQUIMSS en Milla Milla, Imilla Imilla, Tarucamarca y Chiarumani, realizando pruebas de pH y trampas de arroz para capturar microorganismos.",
   },
   {
     icon: Rocket,
     label: "Hito 04",
-    date: "Septiembre 2025",
-    title: "Arranque del Ecosistema de Software",
+    date: "Noviembre - Diciembre 2025",
+    title: "Talleres de Bioinsumos y Validación en Campo",
     description:
-      "Inicio del desarrollo de los módulos core y la plataforma habitacional asociada. Comienza la construcción de la infraestructura digital principal.",
+      "Entrega de materiales, armado práctico de biodigestores para la elaboración de biol junto a las familias productoras y verificación positiva de los microorganismos benéficos capturados en sus suelos.",
   },
   {
     icon: Palette,
     label: "Hito 05",
-    date: "Octubre 2025",
-    title: "Primeros Conceptos de Gamificación",
+    date: "Enero - Febrero 2026",
+    title: "Cartillas Técnicas y Juegos Didácticos",
     description:
-      "Diseño de prototipos lúdicos e interactivos (El Tesoro del Morcillo) con temáticas históricas y locales. Se exploran mecanismos de engagement y motivación.",
+      "Elaboración de cartillas prácticas de diagnóstico de suelos, guías de biol, manuales para el cálculo del punto de equilibrio y juegos didácticos para facilitar el aprendizaje financiero.",
   },
   {
     icon: ClipboardList,
     label: "Hito 06",
-    date: "Noviembre 2025",
-    title: "Trabajo de Campo en Comunidades",
+    date: "Marzo 2026",
+    title: "Desarrollo de la App Móvil Yapu Aroma",
     description:
-      "Talleres y socialización presencial del proyecto en Milla Milla y Patacamaya. Primeros contactos directos con productores y autoridades locales.",
+      "Programación de la aplicación móvil con arquitectura offline-first, diseñada para que los productores registren sus costos de siembra a cosecha y controlen sus cultivos directamente en el campo sin señal.",
   },
   {
     icon: Palette,
     label: "Hito 07",
-    date: "Marzo 2026",
-    title: "Evolución de Identidad: Yapu Aroma",
+    date: "Abril 2026",
+    title: "Identidad Visual y Contenidos Audiovisuales",
     description:
-      "Refactorización visual y cambio oficial de nombre a Yapu Aroma para conectar con la producción de quinua y hortalizas. Se redefine la identidad del proyecto.",
+      "Consolidación de la marca Yapu Aroma, rescate de saberes ancestrales y producción de diez videos educativos optimizados para compartirse fácilmente por celular entre las familias productoras.",
   },
   {
     icon: Truck,
     label: "Hito 08",
-    date: "Abril 2026",
-    title: "Despliegue y Pruebas en Lahuachaca",
+    date: "Mayo 2026",
+    title: "Capacitación en Campo y 26 Descargas",
     description:
-      "Viaje de entrenamiento y demostración de la aplicación móvil en territorio productivo. Se valida la funcionalidad en campo real con productores.",
+      "Socialización, pruebas y entrenamiento práctico en el uso de Yapu Aroma en las comunidades, aplicando mejoras continuas y logrando que 26 productores instalen y registren sus datos en el sistema.",
   },
   {
     icon: Globe,
     label: "Hito 09",
-    date: "Mayo 2026",
-    title: "Lanzamiento y Distribución Pública",
+    date: "Junio 2026",
+    title: "Sistematización de Guías y Prototipo Web",
     description:
-      "Publicación del enlace oficial para promover e integrar la aplicación Yapu Aroma con los productores del altiplano. La app se pone al alcance de los usuarios.",
+      "Entrega de los informes diagnósticos, la Guía del Modelo Multidisciplinario y el diseño del prototipo web interactivo para conectar productos naturales, transformados y turismo con el mercado.",
   },
   {
     icon: Sprout,
     label: "Hito 10",
-    date: "Junio 2026 / Actualidad",
-    title: "Independencia de Módulos y Futuro",
+    date: "Actualidad",
+    title: "Proyección Empresarial y Escalamiento",
     description:
-      "Separación e inicio del proyecto autónomo de 'Planificación de Cultivo' para expandir las capacidades del agro. Se abre una nueva etapa de escalabilidad.",
+      "Transición de Yapu Aroma hacia un modelo de negocio sostenible que articula el control financiero agrícola, el valor agregado (Raíz Productiva) y la logística directa (Camino al Mercado).",
   },
 ]

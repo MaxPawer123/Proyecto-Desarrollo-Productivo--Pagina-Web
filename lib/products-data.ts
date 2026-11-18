@@ -116,12 +116,12 @@ export const products: Product[] = [
   },
   {
     id: "guide-1",
-    name: "Guía de Buenas Prácticas Agrícolas",
-    description: "Manual completo de cultivo sostenible de quinua en altiplano",
+    name: "Cartilla de Elaboración de Biol",
+    description: "Cartilla para una elaboracion adecuada con el Biol ",
     category: "Documentos",
     icon: Lightbulb,
     color: "bg-indigo-50 text-indigo-600",
-    url: "https://www.fao.org/agriculture",
+    url: "https://drive.google.com/file/d/1GxqdIvRXGRi3-DwnK_bhI-_Zzm-t9KOO/view?usp=drive_link",
   },
   {
     id: "guide-2",
@@ -130,7 +130,7 @@ export const products: Product[] = [
     category: "Documentos",
     icon: Lightbulb,
     color: "bg-purple-50 text-purple-600",
-    url: "https://www.fao.org/agriculture",
+    url: "https://drive.google.com/file/d/1BGthVwAJ6zBAbTNrR8xGyEtKCa2FeeUO/view?usp=drive_link",
   },
   {
     id: "guide-3",

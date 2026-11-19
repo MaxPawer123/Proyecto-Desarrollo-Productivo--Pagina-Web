@@ -1,5 +1,39 @@
 export const projectDeliverables = [
   {
+    id: "documento-1",
+    section: "Documentos",
+    title: "Memoria del Proyecto: Desarrollo de un Sistema de Producción",
+    image: "/MemoriaProyecto.png",
+    imageAlt: "Portada del Documento 1",
+    url: "https://drive.google.com/file/d/1Gq4C6srymEwdcD39-vlETtjaA6fj2dBP/view?usp=drive_link",
+    description:
+      "Esta publicación institucional constituye el registro integral de la experiencia y el impacto del proyecto agropecuario implementado en el Altiplano Central. El documento detalla el proceso metodológico participativo, la articulación de cinco carreras universitarias y el trabajo de campo directo con las familias productoras, consolidando los hallazgos técnicos y las estrategias de intervención territorial para su difusión académica.",
+    details: [
+      "Sistematización integral de la experiencia y el ciclo operativo del proyecto",
+      "Aplicación de un marco metodológico participativo y de sensibilización",
+      "Registro de resultados técnicos y comparativos en las zonas de intervenció",
+      "Conclusiones sobre el impacto social y el desarrollo comunitario productivo",
+      "Producción editorial, diseño de diagramación y registro fotográfico territorial",
+    ],
+  },
+  {
+    id: "documento-2",
+    section: "Documentos",
+    title: " Resumen del Sistema de Cooperación Agropecuaria",
+    image: "/ResumenProyecto.png",
+    imageAlt: "Portada del Documento 2",
+    url: "https://drive.google.com/file/d/1x_q6qe11DBnUIm4_wDyQW0nVVp16QOmJ/view?usp=drive_link",
+    description:
+      "El presente documento expone la síntesis del proyecto de interacción social desarrollado por la UMSA (DIPGIS) en las comunidades de Milla Milla, Imilla Imilla, Tarucamarca y Chiarumani. A través de un enfoque multidisciplinario, se analizan a profundidad las realidades productivas, sociales y económicas de las familias dedicadas a la quinua y la zanahoria, evaluando sus limitaciones técnicas y capacidades locales para formular propuestas orientadas al desarrollo sostenible.",
+    details: [
+      "Análisis de costos, rendimientos y dinámicas de producción familiar",
+      "Evaluación de la salud del suelo, materia orgánica y retención de humedad",
+      "Mapeo de prácticas agrícolas locales, rotación y saberes ancestrales",
+      "Identificación de brechas tecnológicas y dificultades de comercialización",
+      "Propuestas de manejo sostenible y fortalecimiento organizativo comunitario",
+    ],
+  },
+  {
     id: "diagnostico-territorial",
     section: "Diagnósticos",
     title: "Diagnóstico Multidiciplinario de Sica Sica",

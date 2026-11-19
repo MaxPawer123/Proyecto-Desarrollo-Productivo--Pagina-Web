@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 713 894" width="713" height="894">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#003d4c"/>
+      <stop offset="100%" stop-color="#02566b"/>
+    </linearGradient>
+    <linearGradient id="accentGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a2be00"/>
+      <stop offset="100%" stop-color="#849c00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="713" height="894" fill="url(#bgGrad2)"/>
+  
+  <!-- Outer border -->
+  <rect x="16" y="16" width="681" height="862" rx="12" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 8"/>
+
+  <!-- Header bar -->
+  <rect x="50" y="50" width="613" height="8" rx="4" fill="url(#primaryGrad2)"/>
+  
+  <!-- Subtitle Header -->
+  <text x="50" y="90" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#003d4c" letter-spacing="2">
+    UNIVERSIDAD MAYOR DE SAN ANDRÉS · PROYECTO AGRO
+  </text>
+  <text x="50" y="112" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">
+    DEPARTAMENTO DE INVESTIGACIÓN, POSTGRADO E INTERACCIÓN SOCIAL (DIPGIS)
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="50" y1="135" x2="663" y2="135" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Document Card Central Area -->
+  <rect x="70" y="180" width="573" height="460" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Document Icon Container -->
+  <circle cx="356" cy="320" r="60" fill="#eff6ff"/>
+  <circle cx="356" cy="320" r="50" fill="#dbeafe"/>
+  
+  <!-- Document Icon (SVG path) -->
+  <g transform="translate(336, 300)" stroke="#2563eb" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 2H6a2 2 0 0 0-2 2v24a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V12z"/>
+    <polyline points="14 2 14 12 24 12"/>
+    <line x1="8" y1="18" x2="16" y2="18"/>
+    <line x1="8" y1="22" x2="20" y2="22"/>
+  </g>
+
+  <!-- Title Placeholders -->
+  <text x="356" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#003d4c">
+    DOCUMENTO 2
+  </text>
+  <text x="356" y="465" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#003d4c">
+    Espacio para Portada de Documento
+  </text>
+  <text x="356" y="500" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b">
+    Sube aquí la imagen de tu segundo documento o informe
+  </text>
+  <text x="356" y="525" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8">
+    Tamaño recomendado: 713 x 894 px (formato vertical)
+  </text>
+
+  <!-- Lower decorative bars -->
+  <rect x="70" y="680" width="573" height="60" rx="12" fill="url(#primaryGrad2)"/>
+  <text x="356" y="717" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#ffffff" letter-spacing="1">
+    DOCUMENTO TÉCNICO Y METODOLÓGICO
+  </text>
+
+  <!-- Bottom footer -->
+  <rect x="50" y="830" width="160" height="12" rx="6" fill="url(#accentGrad2)"/>
+  <text x="663" y="842" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94a3b8">
+    Cooperación Agropecuaria · Bolivia
+  </text>
+</svg>

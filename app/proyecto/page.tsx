@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 }
 
 export default function ProyectoPage() {
+  const documentos = projectDeliverables.filter((d) => d.section === "Documentos")
   const diagnosticos = projectDeliverables.filter((d) => d.section === "Diagnósticos")
   const modelos = projectDeliverables.filter((d) => d.section === "Modelos")
   const tecnologia = projectDeliverables.filter((d) => d.section === "Tecnología")
@@ -68,6 +69,68 @@ export default function ProyectoPage() {
         </div>
       </section>
 
+      {/* Documentos del Proyecto (Antes de los Diagnósticos) */}
+      {documentos.length > 0 && (
+        <section className="bg-muted/30 py-16 sm:py-20 border-b border-border/40">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-12">
+              <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
+                Documentos Institucionales
+              </span>
+              <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
+                   Proyecto Sistema de Cooperación Agropecuaria (UMSA)
+              </h2>
+              <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
+              En este espacio se encontrara la Memoria y el Resumen del Proyecto Sistema de Cooperación Agropecuaria (UMSA)
+              </p>
+            </div>
+
+            <div className="space-y-12">
+              {documentos.map((deliverable, idx) => (
+                <div
+                  key={deliverable.id}
+                  className={`grid gap-8 items-center lg:grid-cols-2 ${idx % 2 === 1 ? "lg:[direction:rtl]" : ""}`}
+                >
+                  <div className={idx % 2 === 1 ? "lg:[direction:ltr]" : ""}>
+                    <span className="inline-flex items-center rounded-full bg-[#a2be00]/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#495700]">
+                      Documento {idx + 1}
+                    </span>
+                    <h3 className="mt-3 font-serif text-2xl font-semibold leading-tight text-foreground sm:text-3xl">
+                      {deliverable.title}
+                    </h3>
+                    <p className="mt-4 text-base leading-relaxed text-muted-foreground">{deliverable.description}</p>
+
+                    <ul className="mt-6 space-y-3">
+                      {deliverable.details.map((detail) => (
+                        <li key={detail} className="flex items-start gap-3">
+                          <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-[#a2be00]" aria-hidden="true" />
+                          <span className="text-sm leading-relaxed text-foreground">{detail}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <a
+                    href={deliverable.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative overflow-hidden rounded-2xl border border-[#003d4c]/20 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer block"
+                  >
+                    <Image
+                      src={deliverable.image}
+                      alt={deliverable.imageAlt}
+                      width={500}
+                      height={400}
+                      className="h-full w-full object-cover"
+                    />
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Diagnósticos */}
       <section className="bg-blue-50/30 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -90,7 +153,10 @@ export default function ProyectoPage() {
                 className={`grid gap-8 items-center lg:grid-cols-2 ${idx % 2 === 1 ? "lg:[direction:rtl]" : ""}`}
               >
                 <div className={idx % 2 === 1 ? "lg:[direction:ltr]" : ""}>
-                  <h3 className="font-serif text-2xl font-semibold leading-tight text-foreground sm:text-3xl">
+                  <span className="inline-flex items-center rounded-full bg-[#003d4c]/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#003d4c]">
+                    Diagnóstico Territorial 0{idx + 1}
+                  </span>
+                  <h3 className="mt-3 font-serif text-2xl font-semibold leading-tight text-foreground sm:text-3xl">
                     {deliverable.title}
                   </h3>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground">{deliverable.description}</p>
@@ -147,7 +213,10 @@ export default function ProyectoPage() {
                 className={`grid gap-8 items-center lg:grid-cols-2 ${idx % 2 === 1 ? "lg:[direction:rtl]" : ""}`}
               >
                 <div className={idx % 2 === 1 ? "lg:[direction:ltr]" : ""}>
-                  <h3 className="font-serif text-2xl font-semibold leading-tight text-foreground sm:text-3xl">
+                  <span className="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#003d4c]">
+                    Modelo 0{idx + 1}
+                  </span>
+                  <h3 className="mt-3 font-serif text-2xl font-semibold leading-tight text-foreground sm:text-3xl">
                     {deliverable.title}
                   </h3>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground">{deliverable.description}</p>
@@ -201,7 +270,10 @@ export default function ProyectoPage() {
             {tecnologia.map((deliverable) => (
               <div key={deliverable.id} className="grid gap-8 items-center lg:grid-cols-2">
                 <div>
-                  <h3 className="font-serif text-2xl font-semibold leading-tight text-foreground sm:text-3xl">
+                  <span className="inline-flex items-center rounded-full bg-amber-200/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#003d4c]">
+                    Herramienta Digital
+                  </span>
+                  <h3 className="mt-3 font-serif text-2xl font-semibold leading-tight text-foreground sm:text-3xl">
                     {deliverable.title}
                   </h3>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground">{deliverable.description}</p>

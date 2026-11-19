@@ -99,71 +99,25 @@ export const activities: Activity[] = [
   {
     id: "community-1",
     icon: MessagesSquare,
-    title: "Socialización con autoridades locales",
+    title: "Entrega final de informes multidisciplinarios",
     description:
-      "Espacios de diálogo con autoridades de Sica Sica y Patacamaya para validar resultados y escuchar inquietudes.",
+      "El 19 de diciembre de 2025 se concretó la entrega final de los informes consolidados por los representantes de las cinco carreras participantes de la UMSA (Ingeniería Agronómica, Trabajo Social, Administración de Empresas, Informática y Comunicación Social). Este hito sintetizó todo el diagnóstico participativo, análisis de costos, validación de suelos y propuestas tecnológicas desarrolladas en beneficio de las familias productoras de Sica Sica y Patacamaya.",
     image: "/entrega final informe2025.jpeg",
     alt: "Reunión con autoridades",
     tag: "Comunidad",
   },
-  {
+  { 
     id: "community-2",
     icon: Users,
-    title: "Asamblea comunitaria",
+    title: "Taller con productores de hortalizas en Chiarumani",
     description:
-      "Encuentro con familias productoras para co-diseñar las herramientas y validar avances del proyecto.",
-    image: "/placeholder.jpg",
+      "Espacio de encuentro y taller realizado en la comunidad de Chiarumani junto a los agricultores de hortalizas, promoviendo el diálogo participativo, el acompañamiento en campo y el fortalecimiento productivo de las familias locales.",
+    image: "/12_abril.jpeg",
     alt: "Asamblea comunitaria",
     tag: "Comunidad",
   },
-  {
-    id: "community-3",
-    icon: MessagesSquare,
-    title: "Devolución de resultados",
-    description:
-      "Presentación participativa del diagnóstico integral en territorios, recogiendo retroalimentación para ajustes.",
-    image: "/placeholder.jpg",
-    alt: "Devolución de resultados",
-    tag: "Comunidad",
-  },
-  {
-    id: "community-4",
-    icon: Users,
-    title: "Encuentro de saberes",
-    description:
-      "Espacios de intercambio entre conocimientos académicos y saberes ancestrales de las comunidades productoras.",
-    image: "/placeholder.jpg",
-    alt: "Encuentro de saberes",
-    tag: "Comunidad",
-  },
-  {
-    id: "research-1",
-    icon: BookOpenCheck,
-    title: "Levantamiento de datos de campo",
-    description:
-      "Recolección sistemática de información sobre variedades de quinua, rendimientos y prácticas productivas locales.",
-    image: "/placeholder.jpg",
-    alt: "Levantamiento de datos",
-    tag: "Investigación",
-  },
-  {
-    id: "research-2",
-    icon: BookOpenCheck,
-    title: "Análisis de muestras de suelo",
-    description:
-      "Procesamiento científico de muestras del territorio para caracterizar composición, pH y nutrientes.",
-    image: "/placeholder.jpg",
-    alt: "Análisis de suelos",
-    tag: "Investigación",
-  },
-  {
-    id: "research-3",
-    icon: BookOpenCheck,
-    title: "Sistematización de saberes",
-    description:
-      "Documentación y análisis de prácticas ancestrales de productores para integrarlas al modelo multidisciplinario.",
-    image: "/placeholder.jpg",
-    alt: "Sistematización de saberes",
-    tag: "Investigación",
-  },
+ 
+ 
+  
+ 
 ]

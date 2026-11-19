@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Sprout, Heart, GraduationCap, MapPin } from "lucide-react"
+import Image from "next/image"
+import { Heart, GraduationCap, MapPin } from "lucide-react"
 
 export function SiteFooter() {
   return (  
@@ -7,10 +8,16 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <Link href="/" className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-                <Sprout className="h-5 w-5" aria-hidden="true" />
-              </span>
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-background/10 overflow-hidden ring-1 ring-background/15 transition-transform group-hover:scale-105">
+                <Image
+                  src="/logo.png"
+                  alt="Logo del Proyecto"
+                  width={44}
+                  height={44}
+                  className="h-full w-full object-contain p-1"
+                />
+              </div>
               <div className="leading-tight">
                 <p className="font-serif text-xl font-semibold">Cooperación Agropecuaria a Familias Productoras</p>
                 <p className="text-xs uppercase tracking-wider text-background/60">UMSA · Bolivia</p>
